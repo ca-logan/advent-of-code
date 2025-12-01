@@ -1,0 +1,15 @@
+Part one:
+1. Read each line in the list
+2. Split each line into 2 entries, left and right
+3. Append left and right entries into according lists
+4. Sort each list, smallest to largest
+5. Compare each entry in sorted lists and find the difference
+6. Add differences up - this is the answer!
+
+Part two:
+1. Reach each line in the list
+2. Split each line into 2 entries, left and right (I now know python can do this with a single function)
+3. Sort each list, smallest to largest - not necessary but makes process faster
+4. Read each item in the left list, and determine how many times it appears in the right list
+5. Multiply this item's value by the total amount of times it appears in the right list
+6. Add this similarity value to a total similarity score - at the end, this is the answer!
