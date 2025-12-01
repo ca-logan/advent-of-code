@@ -1,7 +1,6 @@
 numberList= open("input.txt")
 leftList = list()
 rightList = list()
-index = 0
 similarityValue = 0
 similarityScore = 0
 
@@ -14,4 +13,12 @@ leftList = sorted(leftList)
 rightList = sorted(rightList)
 
 for item in leftList:
-    
+    similarityValue = item
+    instances = 0
+    while rightList.index(item):
+        instances += 1
+        rightList.remove(item)
+    similarityValue *= instances
+    similarityScore += similarityValue
+
+print(similarityScore)
